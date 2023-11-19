@@ -1,5 +1,6 @@
 {
-  "name": "react-course",
+  "name": "platzi_react_vite_tailwindCSS",
+  "homepage": "https://klauditha.github.io/platzi_react_vite_tailwindCSS",
   "private": true,
   "version": "0.0.0",
   "type": "module",
