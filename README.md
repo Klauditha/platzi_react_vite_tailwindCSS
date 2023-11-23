@@ -11,3 +11,8 @@ Currently, two official plugins are available:
 ## Apuntes
 
 - https://nerdcave.com/tailwind-cheat-sheet
+
+
+## API Platzi
+
+- https://fakeapi.platzi.com/
