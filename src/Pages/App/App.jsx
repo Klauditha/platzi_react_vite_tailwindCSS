@@ -1,4 +1,4 @@
-import { useRoutes, BrowserRouter } from "react-router-dom";
+import { useRoutes, BrowserRouter, HashRouter } from "react-router-dom";
 import "./App.css";
 import Home from "../Home/Home";
 import MyAccount from "../MyAccount/MyAccount";
@@ -39,10 +39,10 @@ const AppRoutes = () => {
 };
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppRoutes />
       <Navbar />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
