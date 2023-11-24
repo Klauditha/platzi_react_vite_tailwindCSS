@@ -1,4 +1,5 @@
-import { useRoutes,  HashRouter } from "react-router-dom";
+import { useRoutes, HashRouter } from "react-router-dom";
+import { ShoppingCartProvider } from "../../Context/Context";
 import "./App.css";
 import Home from "../Home/Home";
 import MyAccount from "../MyAccount/MyAccount";
@@ -39,10 +40,12 @@ const AppRoutes = () => {
 };
 const App = () => {
   return (
-    <HashRouter>
-      <AppRoutes />
-      <Navbar />
-    </HashRouter>
+    <ShoppingCartProvider>
+      <HashRouter>
+        <AppRoutes />
+        <Navbar />
+      </HashRouter>
+    </ShoppingCartProvider>
   );
 };
 
