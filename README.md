@@ -16,3 +16,7 @@ Currently, two official plugins are available:
 ## API Platzi
 
 - https://fakeapi.platzi.com/
+
+## Recursos
+
+- https://heroicons.com/
