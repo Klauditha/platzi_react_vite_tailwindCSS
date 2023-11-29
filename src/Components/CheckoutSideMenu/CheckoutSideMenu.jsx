@@ -1,4 +1,5 @@
 import { XMarkIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 import "./CheckoutSideMenu.css";
 import { useContext } from "react";
 import { ShoppingCartContext } from "../../Context/Context";
@@ -33,7 +34,7 @@ const CheckoutSideMenu = () => {
       } checkout-side-menu  flex-col fixed top-20 right-0 border border-black rounded-lg bg-white`}
     >
       <div className="flex justify-between items-center p-6">
-        <h2 className="font-medium text-xl"> My Orders</h2>
+        <h2 className="font-medium text-xl"> My Order</h2>
         <div>
           <XMarkIcon
             className="h-6 w-6 text-black cursor-pointer"
@@ -60,12 +61,14 @@ const CheckoutSideMenu = () => {
             ${totalPrice(context.cartProducts)}
           </span>
         </p>
-        <button
-          className="w-full bg-black py-3 text-white rounded-lg"
-          onClick={() => handleCheckout()}
-        >
-          Checkout
-        </button>
+        <Link to="/my-orders/last">
+          <button
+            className="w-full bg-black py-3 text-white rounded-lg"
+            onClick={() => handleCheckout()}
+          >
+            Checkout
+          </button>
+        </Link>
       </div>
     </aside>
   );
