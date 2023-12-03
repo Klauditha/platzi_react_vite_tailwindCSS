@@ -9,8 +9,8 @@ const MyOrders = () => {
   console.log(context.order)
   return (
     <Layout>
-      <div className="flex w-80  relative items-center justify-center">
-        <h1>My Orders</h1>
+      <div className="flex w-80  relative items-center justify-center mb-4">
+        <h1 className='font-medium text-xl'>My Orders</h1>
       </div>
       {context.order.map((order, index) => (
         <Link key={index} to={`/my-orders/${index}`}>
