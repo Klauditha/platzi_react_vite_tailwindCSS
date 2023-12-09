@@ -20,3 +20,9 @@ Currently, two official plugins are available:
 ## Recursos
 
 - https://heroicons.com/
+
+## Deploy
+
+- https://vitejs.dev/guide/static-deploy.html
+- https://app.netlify.com/
+- Vercel
