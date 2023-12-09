@@ -43,7 +43,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/furnitures"
-            onClick={() => context.setSearchByCategory('furnitures')}
+            onClick={() => context.setSearchByCategory('furniture')}
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             Furnitures
@@ -92,12 +92,12 @@ const Navbar = () => {
             to="/sign-in"
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            SignIn
+            Sign In
           </NavLink>
         </li>
         <li className="flex items-center">
           <ShoppingBagIcon className="h-6 w-6 text-black" />
-          <div>{context.count}</div>
+          <div>{context.cartProducts.lenght}</div>
         </li>
       </ul>
     </nav>
